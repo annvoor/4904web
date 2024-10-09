@@ -1,38 +1,13 @@
-<script lang="ts">
-	import { onDestroy, onMount } from 'svelte';
-	import Monaco from 'monaco-editor/esm/vs/editor/editor.api';
-
-	let editor: Monaco.editor.IStandaloneCodeEditor;
-	let monaco: typeof Monaco;
-	let editorContainer: HTMLElement;
-
-	onMount(async () => {
-		// Import our 'monaco.ts' file here
-		// (onMount() will only be executed in the browser, which is what we want)
-		monaco = (await import('./monaco')).default;
-
-		// Your monaco instance is ready, let's display some code!
-		const editor = monaco.editor.create(editorContainer);
-		const model = monaco.editor.createModel(
-			"console.log('Hello from Monaco! (the editor, not the city...)')",
-			'javascript'
-		);
-		editor.setModel(model);
-	});
-
-	onDestroy(() => {
-		monaco?.editor.getModels().forEach((model) => model.dispose());
-		editor?.dispose();
-	});
+<script>
+    import Tiptap from '$lib/Tiptap.svelte'
 </script>
-
-<div>
-	<div class="container" bind:this={editorContainer} />
-</div>
-
-<style>
-	.container {
-		width: 100%;
-		height: 600px;
-	}
-</style>
+  
+<main>
+    <div>
+        <p>
+            This is sample lesson instructions! Here is where all the knowledge will go.
+        </p>
+    </div>
+    <Tiptap />
+</main>
+  

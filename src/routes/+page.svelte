@@ -3,7 +3,7 @@
 </script>
 
 <h1>Welcome to Team 4904</h1>
-<a href="/lessons">
+<a href="/lessons/1">
     <button onclick>Start Learning!</button>
 </a>
 
