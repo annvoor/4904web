@@ -1,16 +1,17 @@
 <script>
     import Tiptap from '$lib/Tiptap.svelte'
+    export let data;
 </script>
 
 <html lang="en" id="html">
 <div class="page">
-    <h1><b>Java 101:</b> Variables</h1>
+    <h1>{data.lesson.title}</h1>
 
 <main>
     <div class="twoBox">
         <div id="lesson">
             <p>
-            This is sample lesson instructions! Here is where all the knowledge will go.
+            {@html data.lesson.content}
             </p>
         </div>
         <div id="edit">

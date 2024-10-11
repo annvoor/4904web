@@ -44,7 +44,8 @@
 	>
 		P
 	</button>
-{/if} -->
+{/if} 
+-->
 
 <div bind:this={element} />
 
