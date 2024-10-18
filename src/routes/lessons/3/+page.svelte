@@ -1,1 +1,0 @@
-<h1><b>Java 301:</b> Variables</h1>

@@ -3,39 +3,40 @@
     export let data;
 </script>
 
-<html lang="en" id="html">
-<div class="page">
-    <h1>{data.lesson.title}</h1>
-
-<main>
-    <div class="twoBox">
-        <div id="lesson">
-            <p>
-            {@html data.lesson.content}
-            </p>
+<html lang="en">
+    <body>
+        <h1>{@html data.lesson.title}</h1>
+        <main>
+        <div class="twoBox">
+            <div id="lesson">
+                <p>
+                {@html data.lesson.content}
+                </p>
+            </div>
+            <div id="edit">
+                <Tiptap />
+            </div>
         </div>
-        <div id="edit">
-            <Tiptap />
-        </div>
-    </div>
-</main>
-</div>
+        </main>
+    </body>
 </html>  
 
 <style>
-    .page {
+    body {
         display: flex;
         flex-direction: column;;
         justify-content: space-between;
         background-color: rgb(22,36,50);
-        background-size: 20px 20px;
-        margin: 0;
-        padding: 10px;
+        width: 105%;
+        margin: 0px;
+        padding: 0px;
     }
     .twoBox {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: 0px;
+        padding: 0px;
     }
     #lesson {
         float: inline-start;
@@ -47,21 +48,24 @@
         width: 50%;
         height: 1000px;
         background-color: #475468;
-        padding: 10px;
-        padding-top: 5px;
+        padding: 5px;
     }
-    #html {
+    html {
         color: #fefefe;
         padding: 0px;
         margin: 0px;
-        border: 100px;
-        border-color: rgb(22,36,50);
-    }
-    h1 {
-        width: 50%;
+        width: 100%;
     }
     p {
-        margin: 0px;
+        margin: 16px;
     }
+    h1 {
+		font-family: Courier, monospace;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 30px;
+        width: 50%;
+	}
 
 </style>
