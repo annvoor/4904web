@@ -5,7 +5,7 @@
 
 <html lang="en">
     <body>
-        <h1>{@html data.lesson.title}</h1>
+        <a href="/"><h1>{@html data.lesson.title}</h1></a>
         <main>
         <div class="twoBox">
             <div id="lesson">
