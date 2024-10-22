@@ -28,7 +28,15 @@ export const lessons = [
 		slug: 'java2',
 		title: 'Java Basics 201: Variables, If-Statements, For-Loops, and Functions',
 		content:
-			'<p>if if then if unless else elses bc no if.</p>'
+			`
+			<h3>Variables</h3>
+			<p> I am assuming you know what a variable is. If not, read Basics 101! <br>
+			In our code, we mainly use 5 types of variables: int, float, double, boolean, and String. <br> <br>
+			int stands for integer, and is exactly what it sounds like. It stores positive numbers, negative numbers, and zero, but no fractions or decimals. <br>
+			For example, we could say <code>int age = 16;</code> <br>
+			float also holds numbers, but additionally can store decimals.
+			</p>
+			`
     },
 	{
 		slug: 'java3',
