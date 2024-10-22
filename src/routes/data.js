@@ -31,11 +31,30 @@ export const lessons = [
 			`
 			<h3>Variables</h3>
 			<p> I am assuming you know what a variable is. If not, read Basics 101! <br>
-			In our code, we mainly use 5 types of variables: int, float, double, boolean, and String. <br> <br>
-			int stands for integer, and is exactly what it sounds like. It stores positive numbers, negative numbers, and zero, but no fractions or decimals. <br>
-			For example, we could say <code>int age = 16;</code> <br>
-			float also holds numbers, but additionally can store decimals.
+			In our code, we mainly use 5 types of variables: <code> int, float, double, boolean, and String. </code><br> <br>
+			<code>int</code> stands for integer, and is exactly what it sounds like. It stores positive numbers, negative numbers, and zero, but no fractions or decimals. <br>
+			For example, we could say <code>int age = 16;</code> <br><br>
+			<code>float</code> also holds numbers, but can store decimals too. <br>
+			Ex. <code>float price = 9.99;</code> <br><br>
+			A <code>double</code> is just a <code>float</code> that can hold larger numbers (32 vs 64 bits). We don’t really use numbers that large and so the two are pretty interchangeable in our code. <br><br>
+			A <code>boolean</code> holds a true or false value. Anything that can be answered yes/no uses a <code>boolean</code>. <br>
+			Ex. <code>boolean roboticsIsCool = false;</code> <br><br>
+			And last but not least, we have <code>String</code>. A <code>String</code> holds text. The contents of a <code>String</code> variable are enclosed in quotation marks, and anything within the quotation marks is treated as text. Even if you put a number in a string, you won’t be able to do math with it, because it is just seen as a character. <br>
+			Ex. <code>String teamName = "Bot Provoking 4904";</code> <br><br>
+			So how do we declare a variable in Java? As you can see in the examples for every data type, each variable declaration requires the data type, the variable name, and the value. 
+			All you have to do is put these in order (don’t forget the semicolon) and you’re done! Additionally, when assigning a new value to a variable, you do not need to include a data type. <br>
+			Ex. <br>
+			<code> boolean roboticsIsCool = false; <br>
+			roboticsIsCool = true; </code> <br>
 			</p>
+			<h3> Practice Time! </h3>
+			<p> Now it's time for <strong>you</strong> to write some code! </p>
+			<ol>
+  				<li>Inside of the main() method, create a variable named name with your name.</li>
+  				<li>Make a variable called age with your age as an integer.</li>
+  				<li>Create a variable called havingFun with a true or false.</li>
+				<li>Create a variable to hold your favorite decimal number.</li>
+			</ol>
 			`
     },
 	{
