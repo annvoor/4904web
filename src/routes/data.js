@@ -1,3 +1,7 @@
+// Each lesson becomes it's own distinct page, where the slug corresponds to the url
+// We have attempted to make proper formatting on the content, however it seems to not work
+// unless you put in all in the head? which is a bad way of doing that
+// TODO: add proper formatting to content
 export const lessons = [
 	{
 		slug: 'java1',

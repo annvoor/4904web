@@ -1,7 +1,5 @@
 <script>
     export let data;
-    // lessons variable just contans number of lessons, refers to pages under lessons, update as needed
-    // const lessons = ['1', '2', '3', '4'];
 </script>
 <html lang="en">
     <body id="page">
@@ -9,6 +7,7 @@
         <h3>Click on a lesson to start learning!</h3>
 
         <!-- "each" creates a lesson for every lesson in the data file
+            @html tag allows the html in the title to actually work instead of printing the <p> or smth
         -->
         <div class="masterlist">
          {#each data.summaries as { slug, title }}
@@ -20,6 +19,8 @@
     </body>
 </html>
 
+// TODO: choose better font
+// TODO: properly vertically center the button text
 <style>
     h1 {
 		font-family: Courier, monospace;

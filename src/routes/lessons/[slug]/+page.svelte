@@ -3,6 +3,10 @@
     export let data;
 </script>
 
+<!-- 
+TODO: add an actual home button, not just a link on the title
+TODO: or make it look better than whatever ugly colors those are
+ -->
 <html lang="en">
     <body>
         <a href="/"><h1>{@html data.lesson.title}</h1></a>
@@ -31,6 +35,7 @@
         margin: 0px;
         padding: 0px;
     }
+    /* covers both the text editing and lesson content */
     .twoBox {
         display: flex;
         flex-direction: row;
@@ -38,11 +43,13 @@
         margin: 0px;
         padding: 0px;
     }
+    /* lesson content */
     #lesson {
         float: inline-start;
         width: 50%;
         height: 1000px;
     }
+    /* text edit box */
     #edit {
         float: right;
         width: 50%;

@@ -6,6 +6,7 @@
 	let element;
 	let editor;
 
+	// How to make text box larger when starting? Want to make it size of whole box, not just one line
 	onMount(() => {
 		editor = new Editor({
 			element: element,
