@@ -13,15 +13,20 @@ export const lessons = [
 			<p>For now let's just say the box “x” has the number two within it:</p>
 			<code>x = 2;</code>
 			<p>If we want to change what 'x' is we could say on a later line of code that 'x = 4' for example:</p>
-			<code>x = 2;</code>
-			<br>
-			<code>x = 4;</code>
+			<code>x = 2; <br> x = 4;</code>
+			<p>Now since we are using Java we also have to specify what kind of variable 'x' is. 
+			In other words we need to put a second label on our box x, one saying, for example, integer: </p>
+			<code> int x = 2; <br> x = 4; </code>
+			<p>One thing to note in the code above is the fact that we only need to label x as an integer the first time. 
+			There are many different types of data in Java beyond int, and those will be explained in the section below.</p>
+			<p>You can do many things with just integers such as addition, subtraction, or even multiplication!</p>
+			<code>int x = 2; <br> int y = 3; <br> int z = 2 * x + 3 * y; // z is 13 </p>
 			`
 	},
 
 	{
 		slug: 'java2',
-		title: 'Java Basics 201: Variables, If-Statements, For-Loops, and Functions  <strong>Start here if you have some programming experience!</strong>',
+		title: 'Java Basics 201: Variables, If-Statements, For-Loops, and Functions',
 		content:
 			'<p>if if then if unless else elses bc no if.</p>'
     },
