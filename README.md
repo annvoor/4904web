@@ -1,38 +1,25 @@
-# create-svelte
+# 4904 Training Site
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Running on Web
 
-## Creating a project
+Go to 4904training.netlify.app
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Running on LocalHost
+Once you've cloned your repo:
 
 ```bash
-npm run dev
+# Make sure you have npm and vite installed
+# Using homebrew:
+brew install node
+brew install vite
 
-# or start the server and open the app in a new browser tab
+# install the dependencies
+npm install
+
+#open the project!
 npm run dev -- --open
 ```
 
-## Building
+## TipTap
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+This project uses TipTap as a text editor. Docs [here] (https://tiptap.dev/docs/editor/getting-started/configure)
