@@ -1,15 +1,15 @@
 <script>
-    import Tiptap from '$lib/tiptap.svelte'
+    import CodeEditor from '$lib/codeeditor.svelte'
     export let data;
 </script>
 
-<!-- 
-TODO: add an actual home button, not just a link on the title
-TODO: or make it look better than whatever ugly colors those are
- -->
 <html lang="en">
     <body>
-        <a href="/"><h1>{@html data.lesson.title}</h1></a>
+        <a href="/">
+    <img src="/home.png" alt="home button" />
+        </a>
+
+        <h1>{@html data.lesson.title}</h1>
         <main>
         <div class="twoBox">
             <div id="lesson">
@@ -18,7 +18,7 @@ TODO: or make it look better than whatever ugly colors those are
                 </p>
             </div>
             <div id="edit">
-                <Tiptap />
+                <CodeEditor />
             </div>
         </div>
         </main>
@@ -26,13 +26,45 @@ TODO: or make it look better than whatever ugly colors those are
 </html>  
 
 <style>
+
+    /* imports fonts from otf + ttf files */
+    @font-face {
+        font-family: 'Arvo Bold';
+        src: url('.../Fonts/Arvo-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: 'Arvo';
+        src: url('.../Fonts/Arvo-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: 'CODE Bold';
+        src: url('.../Fonts/CODE Bold.otf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: 'Robotics Regular';
+        src: url('.../Fonts/Robotics-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
     body {
+        font-size:90%;
+        font-family: 'Arvo';
         display: flex;
         flex-direction: column;;
         justify-content: space-between;
         background-color: rgb(22,36,50);
-        width: 105%;
-        margin: 0px;
+        width: 95%;
+        margin-top:2%;
         padding: 0px;
     }
     /* covers both the text editing and lesson content */
@@ -47,13 +79,19 @@ TODO: or make it look better than whatever ugly colors those are
     #lesson {
         float: inline-start;
         width: 50%;
-        height: 1000px;
+        height: 500px;
     }
+    h1{
+        text-decoration:none;
+        color: #ffffff;
+        margin-left:1%;
+    }
+
     /* text edit box */
     #edit {
         float: right;
         width: 50%;
-        height: 1000px;
+        height: 500px;
         background-color: #475468;
         padding: 5px;
     }
@@ -66,8 +104,12 @@ TODO: or make it look better than whatever ugly colors those are
     p {
         margin: 16px;
     }
+    img{
+        max-width:2%;
+    }
     h1 {
-		font-family: Courier, monospace;
+		font-family: 'Robotics Regular', monospace;
+        color:#f7ce7b;
         margin-top: 10px;
         margin-left: 0px;
         margin-right: 0px;

@@ -19,42 +19,76 @@
     </body>
 </html>
 
-// TODO: choose better font
-// TODO: properly vertically center the button text
 <style>
+
+   /* imports fonts from otf + ttf files */
+    @font-face {
+        font-family: 'Arvo Bold';
+        src: url('../Fonts/Arvo-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: 'Arvo';
+        src: url('../Fonts/Arvo-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: 'CODE Bold';
+        src: url('../Fonts/CODE Bold.otf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: 'Robotics Regular';
+        src: url('../Fonts/Robotics-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
     h1 {
-		font-family: Courier, monospace;
+		font-family: 'Arvo Bold', sans-serif;
         margin: 10px;
         font-size: 80px;
 	}
     h3 {
-		font-family: Courier, monospace;
+		font-family: 'Arvo', sans-serif;
         margin: 10px;
         font-size: 30px;
 	}
+
 /* full list of lessons */
     .masterlist {
         display: flex;
         flex-direction: column;
-        width: 108%;
+        width: 90%;
         justify-content: center;
+
     }
     /* each individual lesson block */
     button {
-        width: 99%;
-        height: 60px;
+        width: 100%;
         margin: 10px;
         background-color: #475468;
         color: #fefefe;
         border-color: #b0d4f0;
         justify-content: left;
         font-size: x-large;
-        font-family: Courier, monospace;
+        font-family: 'Robotics Regular', monospace;
         text-align: left;
         border-radius: 12px;
         padding-left: 10px;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+    /*vertically centered text on button*/
+    button p{
+        line-height:0;
+        height:0;
+
     }
     #page {
         color: #f7ce7b;
