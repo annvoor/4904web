@@ -71,18 +71,16 @@
     /* each individual lesson block */
     button {
         width: 100%;
-        margin: 10px;
-        background-color: #475468;
-        color: #fefefe;
-        border-color: #b0d4f0;
+        margin: 5px;
+        background-color: #fefefe;
+        color: #162432;
         justify-content: left;
         font-size: x-large;
         font-family: 'Robotics Regular', monospace;
         text-align: left;
-        border-radius: 12px;
         padding-left: 10px;
-        padding-top: 4%;
-        padding-bottom: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
     /*vertically centered text on button*/
     button p{
@@ -91,8 +89,8 @@
 
     }
     #page {
-        color: #f7ce7b;
-        background-color: rgb(22,36,50);
+        color: rgb(22,36,50);
+        background-color: #dff0fc;
         height: 1000px;
         width: 95%;
         padding: 10px;
@@ -100,6 +98,14 @@
     html, body {
         margin: 0;
         padding: 0;
+        background-color: #dff0fc;
     }  
+    /* we never use this in the code, but this was the only way to
+    get the background color to cover the whole page
+    weird code pulled from the google chrom dev tools, don't question it? 
+    just ignore the yellow underline */
+    /* html.s-BVOmtoq1lFbO {
+        background-color: #dff0fc;
+    } */
 
 </style>

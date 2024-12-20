@@ -5,22 +5,21 @@
 
 <html lang="en">
     <body>
-        <a href="/">
-    <img src="/home.png" alt="home button" />
-        </a>
-
-        <h1>{@html data.lesson.title}</h1>
         <main>
-        <div class="twoBox">
-            <div id="lesson">
-                <p>
-                {@html data.lesson.content}
-                </p>
+            <div class="twoBox">
+                <div id="left">
+                    <a href="/">
+                        <img src="/home.png" alt="home button" />
+                    </a>
+                    <h1>{@html data.lesson.title}</h1>
+                    <p>
+                    {@html data.lesson.content}
+                    </p>
+                </div>
+                <div id="right">
+                    <CodeEditor />
+                </div>
             </div>
-            <div id="edit">
-                <CodeEditor />
-            </div>
-        </div>
         </main>
     </body>
 </html>  
@@ -62,9 +61,9 @@
         display: flex;
         flex-direction: column;;
         justify-content: space-between;
-        background-color: rgb(22,36,50);
-        width: 95%;
-        margin-top:2%;
+        background-color: #dff0fc;
+        width: 100%;
+        margin-top:0%;
         padding: 0px;
     }
     /* covers both the text editing and lesson content */
@@ -72,31 +71,32 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 0px;
+        margin: -16px;
         padding: 0px;
+        height: 100%;
+        width: 100%;
     }
     /* lesson content */
-    #lesson {
+    #left {
         float: inline-start;
         width: 50%;
-        height: 500px;
-    }
-    h1{
-        text-decoration:none;
-        color: #ffffff;
-        margin-left:1%;
+        height: 1100px;
+        background-color: #b0d4f0;
+        padding-left: 15px;
+        padding-top: 30px;
     }
 
     /* text edit box */
-    #edit {
+    #right {
         float: right;
         width: 50%;
-        height: 500px;
-        background-color: #475468;
+        height: 1000px;
+        background-color: #dff0fc;
         padding: 5px;
+        margin: 30px;
     }
     html {
-        color: #fefefe;
+        color: rgb(22,36,50);
         padding: 0px;
         margin: 0px;
         width: 100%;
@@ -104,17 +104,22 @@
     p {
         margin: 16px;
     }
-    img{
-        max-width:2%;
-    }
     h1 {
 		font-family: 'Robotics Regular', monospace;
         color:#f7ce7b;
         margin-top: 10px;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 1%;
+        margin-right: 50px;
         font-size: 30px;
-        width: 50%;
+        width: 95%;
 	}
+    a {
+        width: 7%;
+        /* height: 50px; */
+    }
+    img {
+        width: 50px;
+        height: 50px;
+    }
 
 </style>

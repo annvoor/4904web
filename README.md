@@ -20,6 +20,6 @@ npm install
 npm run dev -- --open
 ```
 
-## TipTap
+## JDoodle
 
-This project uses TipTap as a text editor. Docs [here](https://tiptap.dev/docs/editor/getting-started/configure)
+This project uses JDoodle to run the code. Docs [here](https://www.jdoodle.com/docs/embeds/introduction-to-embeds)
